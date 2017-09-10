@@ -320,23 +320,23 @@ border-color: yellow;
 	background-repeat: no-repeat;
 }
 .starwarsImg {
-	background-image: url("../images/starwars.png");
+	background-image: url("../images/starwars.PNG");
 	background-repeat: no-repeat;
 }
 .hangmanImg {
-	background-image: url("../images/hangman.png");
+	background-image: url("../images/hangman.PNG");
 	background-repeat: no-repeat;
 }
 .friendImg {
-	background-image: url("../images/friend.png");
+	background-image: url("../images/friend.PNG");
 	background-repeat: no-repeat;
 }
 .adoptableImg {
-	background-image: url("../images/adoptable.png");
+	background-image: url("../images/adoptable.PNG");
 	background-repeat: no-repeat;
 }
 .truckImg {
-	background-image: url("../images/truckstop.png");
+	background-image: url("../images/truckstop.PNG");
 	background-repeat: no-repeat;
 }
 
