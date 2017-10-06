@@ -1,12 +1,10 @@
 var express = require('express');
 var bodyParser = require('body-parser');
 var logger = require('morgan');
-var path = require('path');
-var nodemailer = require('nodemailer');
-
-
+var nodeMailer = require('nodemailer');
+var xoauth2 = require('xoauth2');
 var app = express();
-var PORT = process.env.PORT || 3000;
+var PORT = process.env.PORT || 5000;
 
 app.use(logger('dev'));
 app.use(bodyParser.json());
@@ -16,9 +14,36 @@ app.use(bodyParser.json({type: 'application/vnd.api+json'}));
 
 app.use(express.static('./public'));
 
-app.get('/', function(req,res){
+app.get('*', function(req,res){
 	res.sendFile('./public/index.html');
 });
+
+var transporter = nodemailer.createTransport({
+	service: "gmail",
+	auth: {
+		xoauth2: xoauth2.createXOAuth2Generator({
+			user: 'holtzman.patrick@gmail.com',
+			clientId: '727656314805-gh9ru4t35ss64q7j3bcblcquvb0ne1hm.apps.googleusercontent.com',
+			clientSecret: 'KK6TKkzsH31O8z2RvsUa27U5',
+			refreshToken: '1/hose6d2SSXyU1UsC2EyvKyJY4oStMpUwIAspeQXaDpI'
+		})
+	}
+});
+
+var mailOptions = {
+	from: "patrick <holtzman.patrick@gmail.com>",
+	to: "holtzman.patrick@gmail.com",
+	subject: "nodemailer test",
+	text: "hello world!!"
+}
+
+transporter.sendMail(mailOptions, function(err,res){
+	if (err){
+		console.log(err)
+	}else{
+		console.log("email sent")
+	}
+})
 
 
 app.listen(PORT, function(){
