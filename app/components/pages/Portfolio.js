@@ -67,15 +67,15 @@ export default class Portfolio extends Component {
 							<a className="siteLink" href="https://friendfindar.herokuapp.com/">
 							</a>
 						</div>
-						<div className="prj prj-bottom-right s4 truckImg">
-							<a href="https://github.com/amparish/food-truck-app">
+						<div className="prj prj-bottom-right s4 falconImg">
+							<a href="https://github.com/Pholtzman88/gamecenter">
 								<div className="banner gitHubLink">
 									<div className="stitches"></div>
 									<h5>GitHub Repo</h5>
 									<div className="stitches"></div>
 								</div>
 							</a>
-							<a className="siteLink" href="https://github.com/amparish/food-truck-app">
+							<a className="siteLink" href="https://falconfighter.herokuapp.com/">
 							</a>
 						</div>
 					</div>

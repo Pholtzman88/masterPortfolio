@@ -335,8 +335,9 @@ border-color: yellow;
 	background-image: url("../images/adoptable.PNG");
 	background-repeat: no-repeat;
 }
-.truckImg {
-	background-image: url("../images/truckstop.PNG");
+.falconImg {
+	background-image: url("../images/falcon.PNG");
+	background-size: 300px 205px;
 	background-repeat: no-repeat;
 }
 
@@ -451,7 +452,7 @@ a:hover{
 	border-right: transparent;
 	border-bottom: 2px solid #F7CE40;
 	background-color: transparent;
-	color: gray;
+	color: white;
 }
 .form-input:focus{
 	outline: none;

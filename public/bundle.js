@@ -40189,10 +40189,10 @@
 							),
 							_react2.default.createElement(
 								"div",
-								{ className: "prj prj-bottom-right s4 truckImg" },
+								{ className: "prj prj-bottom-right s4 falconImg" },
 								_react2.default.createElement(
 									"a",
-									{ href: "https://github.com/amparish/food-truck-app" },
+									{ href: "https://github.com/Pholtzman88/gamecenter" },
 									_react2.default.createElement(
 										"div",
 										{ className: "banner gitHubLink" },
@@ -40205,7 +40205,7 @@
 										_react2.default.createElement("div", { className: "stitches" })
 									)
 								),
-								_react2.default.createElement("a", { className: "siteLink", href: "https://github.com/amparish/food-truck-app" })
+								_react2.default.createElement("a", { className: "siteLink", href: "https://falconfighter.herokuapp.com/" })
 							)
 						)
 					),
