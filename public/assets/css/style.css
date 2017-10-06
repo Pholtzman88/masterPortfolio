@@ -132,7 +132,7 @@ top:0;
 	height:50%;
 	width:100%;
 	position: absolute;
-	left:-130px;
+	left:-160px;
 	z-index: -1;
 }
 .link:focus:before {
@@ -144,7 +144,7 @@ top:0;
 	height:50%;
 	width:100%;
 	position: absolute;
-	left:130px;
+	left:160px;
 	z-index: -1;
 }
 .link:focus:after {
@@ -154,14 +154,14 @@ top:0;
 	from{
 		transform: translateX(0px)
 	}to{
-		transform: translateX(260px);
+		transform: translateX(300px);
 	}
 }
 @keyframes sweep_from_right{
 	from{
 		transform: translateX(0px)
 	}to{
-		transform: translateX(-260px);
+		transform: translateX(-300px);
 	}
 }
 .link:hover {
@@ -419,6 +419,12 @@ a:hover{
 	opacity: .5;
 	height:600px;
 }
+.contactImg{
+	opacity: .5;
+	height: 450px;
+	margin-top: 140px;
+	margin-left: 70px;
+}
 
 .info-container{
 	margin-top: 100px;
@@ -432,25 +438,43 @@ a:hover{
 	line-height: 2;
 }
 .contact-form{
-	background-color: #0B1612;
+	background-color: #1A2930;
 	padding:50px;
 	border-radius: 25px;
-	border:2px solid #F7CE40;
+
 	margin-top: 100px;
 }
 .form-input {
 	margin-bottom:20px;
-	border-radius: 8px;
+	border-top: transparent;
+	border-left: transparent;
+	border-right: transparent;
+	border-bottom: 2px solid #F7CE40;
+	background-color: transparent;
+	color: gray;
+}
+.form-input:focus{
+	outline: none;
+}
+.form-input::placeholder{
+	position: relative;
+	color: gray;
+}
+.form-input:focus::placeholder{
+	transform: translate(0px, -5px);
+	font-size:20px;
+	color: #F7CE40;
 }
 .comments{
 	height:200px;
 }
 .submitBtn{
-	width:100px;
+	width:75px;
 	height: 30px;
-	background-color: #F7CE40;
-	border:none;
+	background-color: #0B1612;
+	border:1px solid #A9ADAC;
 	outline:none;
 	border-radius: 10px;
-	color:#0B1612;
+	color:#F7CE40;
+	box-shadow: 3px 3px 1px black;
 }

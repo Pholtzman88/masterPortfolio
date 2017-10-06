@@ -48,14 +48,16 @@ export default class Contact extends Component {
 			<div>
 			{this.state.displayForm ? <div className="contact-container">
 				<div className="row">
-					<div className="s3"></div>
+					<div className="s1"></div>
 					<form className=" s6 col contact-form" action="mailto:holtzman.patrick@gmail.com">
-						<input className="s2 form-input email" placeholder="email" name="email" onChange={this.handleChange}/>
-						<input className="s2 form-input subject" placeholder="subject" name="subject" onChange={this.handleChange}/>
-						<textarea className="s8 form-input comments" placeholder="comments" name="comments" onChange={this.handleChange}/>
+						<input className="s2 form-input email" placeholder="EMAIL" name="email" onChange={this.handleChange}/>
+						<input className="s2 form-input subject" placeholder="SUBJECT" name="subject" onChange={this.handleChange}/>
+						<textarea className="s8 form-input comments" placeholder="COMMENTS" name="comments" onChange={this.handleChange}/>
 						<input className="submitBtn" type="submit" onClick={this.handleSubmit}/>
 					</form>
-					<div className="s3"></div>
+					<div className="s5 contact-img">
+						<image className={"contactImg"} src="./assets/images/contact-img.png"></image>
+					</div>
 				</div>
 			</div> : null}
 			{this.state.displayConfirmation ? <h1 style={style}>Your Email has been sent!</h1> : null}

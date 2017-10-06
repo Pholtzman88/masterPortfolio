@@ -40310,16 +40310,20 @@
 						_react2.default.createElement(
 							"div",
 							{ className: "row" },
-							_react2.default.createElement("div", { className: "s3" }),
+							_react2.default.createElement("div", { className: "s1" }),
 							_react2.default.createElement(
 								"form",
 								{ className: " s6 col contact-form", action: "mailto:holtzman.patrick@gmail.com" },
-								_react2.default.createElement("input", { className: "s2 form-input email", placeholder: "email", name: "email", onChange: this.handleChange }),
-								_react2.default.createElement("input", { className: "s2 form-input subject", placeholder: "subject", name: "subject", onChange: this.handleChange }),
-								_react2.default.createElement("textarea", { className: "s8 form-input comments", placeholder: "comments", name: "comments", onChange: this.handleChange }),
+								_react2.default.createElement("input", { className: "s2 form-input email", placeholder: "EMAIL", name: "email", onChange: this.handleChange }),
+								_react2.default.createElement("input", { className: "s2 form-input subject", placeholder: "SUBJECT", name: "subject", onChange: this.handleChange }),
+								_react2.default.createElement("textarea", { className: "s8 form-input comments", placeholder: "COMMENTS", name: "comments", onChange: this.handleChange }),
 								_react2.default.createElement("input", { className: "submitBtn", type: "submit", onClick: this.handleSubmit })
 							),
-							_react2.default.createElement("div", { className: "s3" })
+							_react2.default.createElement(
+								"div",
+								{ className: "s5 contact-img" },
+								_react2.default.createElement("image", { className: "contactImg", src: "./assets/images/contact-img.png" })
+							)
 						)
 					) : null,
 					this.state.displayConfirmation ? _react2.default.createElement(
