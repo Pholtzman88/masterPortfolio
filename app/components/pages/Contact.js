@@ -10,6 +10,7 @@ export default class Contact extends Component {
 			comments: "",
 			displayConfirmation: false,
 			displayForm: true
+
 		}
 		this.handleChange = this.handleChange.bind(this);
 		this.handleSubmit = this.handleSubmit.bind(this);
@@ -40,8 +41,13 @@ export default class Contact extends Component {
 	render(){
 
 		const style = {
-			marginLeft: "calc(50% - 220px)",
+			marginLeft: "calc(50% -220px)",
 			marginTop: "250px"
+		}
+		const pStyle = {
+			color: "#A9ADAC",
+			fontSize: "16px",
+			marginBottom: "30px"
 		}
 
 		return(
@@ -50,13 +56,14 @@ export default class Contact extends Component {
 				<div className="row">
 					<div className="s1"></div>
 					<form className=" s6 col contact-form" action="mailto:holtzman.patrick@gmail.com">
-						<input className="s2 form-input email" placeholder="EMAIL" name="email" onChange={this.handleChange}/>
+					<p style={pStyle}>Please contact me by either filling out the form below or emailing me at holtzman.patrick@gmail.com</p>
+						<input className="s2 form-input email" placeholder="YOUR EMAIL" name="email" onChange={this.handleChange}/>
 						<input className="s2 form-input subject" placeholder="SUBJECT" name="subject" onChange={this.handleChange}/>
-						<textarea className="s8 form-input comments" placeholder="COMMENTS" name="comments" onChange={this.handleChange}/>
+						<textarea className="s8 form-input comments" placeholder="MESSAGE" name="comments" onChange={this.handleChange}/>
 						<input className="submitBtn" type="submit" onClick={this.handleSubmit}/>
 					</form>
 					<div className="s5 contact-img">
-						<image className={"contactImg"} src="./assets/images/contact-img.png"></image>
+						<image className="contactImg" src="./assets/images/contact-img.png"></image>
 					</div>
 				</div>
 			</div> : null}

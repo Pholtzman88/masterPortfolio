@@ -40261,6 +40261,7 @@
 				comments: "",
 				displayConfirmation: false,
 				displayForm: true
+
 			};
 			_this.handleChange = _this.handleChange.bind(_this);
 			_this.handleSubmit = _this.handleSubmit.bind(_this);
@@ -40297,8 +40298,13 @@
 			value: function render() {
 
 				var style = {
-					marginLeft: "calc(50% - 220px)",
+					marginLeft: "calc(50% -220px)",
 					marginTop: "250px"
+				};
+				var pStyle = {
+					color: "#A9ADAC",
+					fontSize: "16px",
+					marginBottom: "30px"
 				};
 
 				return _react2.default.createElement(
@@ -40314,9 +40320,14 @@
 							_react2.default.createElement(
 								"form",
 								{ className: " s6 col contact-form", action: "mailto:holtzman.patrick@gmail.com" },
-								_react2.default.createElement("input", { className: "s2 form-input email", placeholder: "EMAIL", name: "email", onChange: this.handleChange }),
+								_react2.default.createElement(
+									"p",
+									{ style: pStyle },
+									"Please contact me by either filling out the form below or emailing me at holtzman.patrick@gmail.com"
+								),
+								_react2.default.createElement("input", { className: "s2 form-input email", placeholder: "YOUR EMAIL", name: "email", onChange: this.handleChange }),
 								_react2.default.createElement("input", { className: "s2 form-input subject", placeholder: "SUBJECT", name: "subject", onChange: this.handleChange }),
-								_react2.default.createElement("textarea", { className: "s8 form-input comments", placeholder: "COMMENTS", name: "comments", onChange: this.handleChange }),
+								_react2.default.createElement("textarea", { className: "s8 form-input comments", placeholder: "MESSAGE", name: "comments", onChange: this.handleChange }),
 								_react2.default.createElement("input", { className: "submitBtn", type: "submit", onClick: this.handleSubmit })
 							),
 							_react2.default.createElement(
