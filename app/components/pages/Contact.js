@@ -41,7 +41,7 @@ export default class Contact extends Component {
 	render(){
 
 		const style = {
-			marginLeft: "calc(50% -220px)",
+			marginLeft: "calc(50% - 220px)",
 			marginTop: "250px"
 		}
 		const pStyle = {
@@ -49,9 +49,12 @@ export default class Contact extends Component {
 			fontSize: "16px",
 			marginBottom: "30px"
 		}
+		const containerStyle = {
+			width: "100%"
+		}
 
 		return(
-			<div>
+			<div style={containerStyle}>
 			{this.state.displayForm ? <div className="contact-container">
 				<div className="row">
 					<div className="s1"></div>

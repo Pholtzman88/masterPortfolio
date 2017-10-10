@@ -40298,7 +40298,7 @@
 			value: function render() {
 
 				var style = {
-					marginLeft: "calc(50% -220px)",
+					marginLeft: "calc(50% - 220px)",
 					marginTop: "250px"
 				};
 				var pStyle = {
@@ -40306,10 +40306,13 @@
 					fontSize: "16px",
 					marginBottom: "30px"
 				};
+				var containerStyle = {
+					width: "100%"
+				};
 
 				return _react2.default.createElement(
 					"div",
-					null,
+					{ style: containerStyle },
 					this.state.displayForm ? _react2.default.createElement(
 						"div",
 						{ className: "contact-container" },
